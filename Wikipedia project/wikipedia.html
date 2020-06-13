@@ -1,0 +1,1376 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="icon" href="wikilogo.ico">
+        <title>Wikipedia</title>
+
+        <style>
+            body
+            {
+                background-color:rgb(243, 243, 243);
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 12px;
+                background-image: linear-gradient(rgb(255, 255, 255) 
+                ,rgb(230, 230, 230));
+
+            }
+            .Upper-text
+            {
+                font-size: 12px;
+                text-align: right;
+                margin-top: 5px;
+            }
+            .Sections
+            {
+                display: flex;
+            }
+            .Text-search-bar
+            {
+                display: flex;
+            }
+            #Search-bar
+            {
+                margin-top: 8px;
+                margin-bottom: 5px;
+                width: 300px;
+                margin-left: 10px;
+            }
+            .Section1
+            {
+                padding-left:22px;
+                padding-right:22px;
+                margin-top: 10px;
+                width: 120px;
+            }
+            .Section2
+            {
+                width: 92%;
+                background-color:rgb(240, 240, 240);
+                background-image: linear-gradient(rgb(255, 255, 255) 
+                ,rgb(230, 230, 230));
+            }
+            .Fst-sec-text
+            {
+                line-height: 7px;
+            }
+            .Fst-sec-text:hover 
+            {
+            text-decoration: underline;
+            }
+            .Space-bar
+            {
+                line-height: 1px;
+            }
+            .Main-page
+            {
+                display: flex;
+                justify-content: space-between;
+                font-size: 14px;
+            }
+            .White-back
+            {
+               padding-top:10px; 
+               padding-bottom: 10px;
+               padding-left: 5px;
+               padding-right: 5px;
+               background-color: white;
+            }
+            .Blue-back
+            {
+                padding-top:10px; 
+               padding-bottom: 10px;
+               padding-left: 5px;
+               padding-right: 5px;
+               background-color:rgb(244, 250, 253);
+            }
+            .White-mid-back
+            {
+                background-color: white;
+                border-top: 1px solid rgb(152, 227, 250);
+                border-left: 1px solid rgb(152, 227, 250);
+                border-bottom: 1px solid rgb(152, 227, 250);
+            }
+            .First-head
+            {
+                display: inline-block;
+                margin-top: 40px;
+                margin-left: 25px;
+                width: 97%;
+                justify-content: space-between;
+                display: flex;
+                background-color:rgb(245, 245, 245) ;
+                text-align: center;
+                border-style: solid;
+                border-color: rgb(179, 177, 177);
+                border-width: 1px;
+                
+            }
+            .Ul-sec
+            {
+                margin-top: 8px;
+                margin-right: 80px;
+                display: flex;
+                text-align: left;
+                font-size: 13px;
+                line-height: 20px;
+            }
+            .High1
+            {
+                margin-left: 30px;
+                line-height: 5px;
+            }
+            .Left-section
+            {
+                background-color: rgb(242, 248, 245);
+                width: 55%;
+                margin-left: 25px;
+                font-size: 14px;
+                line-height: 22px;
+                border-style: solid;
+                border-color: rgb(188, 226, 204);
+                border-width: 1px;
+                margin-top: 5px;
+            }
+            .Headline-lsec
+            {
+                background-color: rgb(188, 226, 204);
+                border-style: solid;
+                border-color: rgb(179, 177, 177);
+                border-width: 1px;
+                font-size: 15px;
+                width: 97%;
+                margin-left: 9px;
+                margin-top: 10px;
+                padding-top: 4px;
+                padding-bottom: 4px;
+            }
+            .All-text
+            {
+                margin-left: 9px;
+                margin-right: 9px;
+                
+            }
+            .Title
+            {
+                margin-left: 5px;
+            }
+            .Down-text
+            {
+                margin-right: 9px;
+                line-height: 10px;
+            }
+            .Text-image
+            {
+                display: flex;
+
+            }
+            .Double-width
+            {
+                width: 140%;
+            }
+            .Section3
+            {
+                display: flex;
+                width: 99%;
+            }
+            .Right-section
+            {
+                background-color: rgb(242, 247, 248);
+                width: 45%;
+                margin-left: 7px;
+                font-size: 14px;
+                line-height: 22px;
+                border-style: solid;
+                border-color: rgb(188, 215, 226);
+                border-width: 1px;
+                margin-top: 5px;
+            }
+            .Headline-rsec
+            {
+                background-color: rgb(192, 213, 226);
+                border-style: solid;
+                border-color: rgb(155, 170, 184);
+                border-width: 1px;
+                font-size: 15px;
+                width: 97%;
+                margin-left: 9px;
+                margin-top: 10px;
+                padding-top: 4px;
+                padding-bottom: 4px;
+            }
+            .Second-head
+            {
+                text-align: center;
+                margin-top: 15px;
+                margin-left: 8px;
+                width: 97%;
+                background-color:rgb(252, 252, 252);
+                text-align: center;
+                border-style: solid;
+                border-color: rgb(188, 208, 226);
+                border-width: 1px;
+                line-height: 9px;
+            }
+            .Connection
+            {
+                line-height: 5px;
+            }
+            .Down-section1
+            {
+                background-color: rgb(244, 236, 248);
+                width: 97%;
+                margin-left: 25px;
+                font-size: 14px;
+                line-height: 22px;
+                border-style: solid;
+                border-color: rgb(227, 203, 240);
+                border-width: 1px;
+                margin-top: 5px;
+            }
+            .Headline-dsec1
+            {
+                background-color: rgb(211, 192, 226);
+                border-style: solid;
+                border-color: rgb(166, 141, 182);
+                border-width: 1px;
+                font-size: 15px;
+                width: 98.4%;
+                margin-left: 9px;
+                margin-top: 10px;
+                padding-top: 4px;
+                padding-bottom: 4px;
+            }
+            .Down-section2
+            {
+                background-color: rgb(253, 253, 253);
+                width: 97%;
+                margin-left: 25px;
+                font-size: 14px;
+                line-height: 22px;
+                border-style: solid;
+                border-color: rgb(168, 168, 168);
+                border-width: 1px;
+                margin-top: 5px;
+                margin-bottom: 25px;
+            }
+            .Headline-dsec2
+            {
+                background-color: rgb(221, 221, 221);
+                border-style: solid;
+                border-color: rgb(168, 168, 168);
+                border-width: 1px;
+                font-size: 15px;
+                width: 98.4%;
+                margin-left: 9px;
+                margin-top: 10px;
+                padding-top: 4px;
+                padding-bottom: 4px;
+            }
+            .Logo-text
+            {
+                display: flex;
+            }
+            .No-bullets
+            {
+                list-style-type: none;
+
+            }
+            .Sis-project
+            {
+                display: flex;
+                justify-content: space-between;
+                margin-right: 100px;
+            }
+            .Logo-img
+            {
+                margin-right: 20px;
+            }
+            .Sponser-list
+            {
+                display: flex;
+            }
+            .Text-sponser
+            {
+                display: flex;
+                margin-left: 20px;
+                justify-content:space-between;
+            }
+            form
+            {
+                display: flex;
+            }
+            form.example input[type=text] 
+            {
+            padding: .8px;
+            font-size: 12px;
+            border: 1px solid grey;
+            float: left;
+            width: 90%;
+            background: #ffffff;
+            border-right: none;
+            border-radius: .5%;
+            }
+
+            form.example button {
+            float: left;
+            width: 10%;
+            padding: .8px;
+            background: #ffffff;
+            color: white;
+            font-size: 17px;
+            border: 1px solid grey;
+            border-left: none;
+            cursor: pointer;
+            border-radius: .5%;
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        
+        <div class="Sections">
+        <section class="Section1">
+            <img style="width:110px;height:135px;"
+            src="Wikipedia-logo-en-big.png"alt="Wikipedia logo"/>
+
+            <p class="Fst-sec-text"style="margin-top: 35px;">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Main page</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Contents</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Current events</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Random article</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">About Wikipedia</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Contact us</a>
+            </p>
+            <p class="Fst-sec-text"style="margin-bottom:25px">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Donate</a>
+            </p>
+
+            <p class="Space-bar">Contribute</p>
+            <p class="Space-bar"><hr 
+            style="height:.5px;border:none;color:rgb(170, 170, 170);
+            background-color:rgb(170, 170, 170)"></p>
+
+            <p class="Fst-sec-text"style="margin-top: 10px;">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Help</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Community portal</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Recent changes</a>
+            </p>
+            <p class="Fst-sec-text" style="margin-bottom:25px">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Upload file</a>
+
+            <p class="Space-bar">Tools</p>
+            <p class="Space-bar"><hr 
+            style="height:.5px;border:none;color:rgb(170, 170, 170);
+            background-color:rgb(170, 170, 170)"></p>
+
+            <p class="Fst-sec-text"style="margin-top: 10px;">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">What links here</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Related changes</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Special pages</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Permanent link</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Page information</a>
+            </p>
+            <p class="Fst-sec-text"style="margin-bottom:25px">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Wikidata item</a>
+            </p>
+
+            <p class="Space-bar">Languages</p>
+            <p class="Space-bar"><hr 
+            style="height:.5px;border:none;color:rgb(170, 170, 170);
+            background-color:rgb(170, 170, 170)"></p>
+            <p class="Fst-sec-text"style="margin-top: 10px;">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">العربية</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Български</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Bosanski</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Català</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Čeština</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Dansk</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Deutsch</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Eesti</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Ελληνικά</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Español</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Esperanto</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Euskara</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">فارسی</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Français</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Galego</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">한국어</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Hrvatski</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Bahasa Indonesia</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Italiano</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">עברית</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">ქართული</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Latviešu</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Lietuvių</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Magyar</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Bahasa Melayu</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Nederlands</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">日本語</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Norsk bokmål</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Norsk nynorsk</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Polski</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Português</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Română</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Русский</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Simple English</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Slovenčina</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Slovenščina</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Српски / srpski</a>
+            </p>
+            <p class="Fst-sec-text" style="line-height: 10px;">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Srpskohrvatski / српскохрватски</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Suomi</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Svenska</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">ไทย</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Türkçe</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Українська</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Tiếng Việt</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">中文</a>
+            </p>
+            <p class="Fst-sec-text"style="margin-bottom:25px">
+                <strong><a style="text-decoration:none;margin-right: .8em;"
+                href="">Complete list</a></strong>
+            </p>
+
+            <p class="Space-bar">In other projects</p>
+            <p class="Space-bar"><hr 
+            style="height:.5px;border:none;color:rgb(170, 170, 170);
+            background-color:rgb(170, 170, 170)"></p>
+
+            <p class="Fst-sec-text"style="margin-top: 10px;
+            line-height: 10px;">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Wikimedia Commmons</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">MediaWiki</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Meta-Wiki</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Wikispecies</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Wikibooks</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Wikidata</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Wikimania</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Wikinews</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Wikiquote</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Wikisource</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Wikiversity</a>
+            </p>
+            <p class="Fst-sec-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Wikivoyage</a>
+            </p>
+            <p class="Fst-sec-text"style="margin-bottom:25px">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Wiktionary</a>
+            </p>
+
+            <p class="Space-bar">Print/export</p>
+            <p class="Space-bar"><hr 
+            style="height:.5px;border:none;color:rgb(170, 170, 170);
+            background-color:rgb(170, 170, 170)"></p>
+
+            <p class="Fst-sec-text"style="margin-top: 10px;">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Download as PDF</a>
+            </p>
+            <p class="Fst-sec-text"style="margin-bottom:25px">
+                <a style="text-decoration:none;margin-right: .8em;"
+                href="">Printable version</a>
+            </p>
+        </section>
+
+        <section class="Section2">
+            <p class="Upper-text">
+                <a style="text-decoration:none;margin-right: .8em;"
+                 href="">Talk</a>
+                <a style="text-decoration:none;margin-right: .8em;" 
+                href="">Contributions</a>
+                <a style="text-decoration:none;margin-right: .8em;" 
+                href="">Create account</a>
+                <a style="text-decoration:none" href="">Log in</a>
+            </p>
+            <header class="Main-page">
+                <nav>
+                    <p>
+                        <a class="Link"style="text-decoration:none;"
+                        href=""><span class="White-back">Main Page</span>
+                        </a> 
+                        <a class="Link"style="text-decoration:none;"
+                        href=""><span class="Blue-back">Talk
+                    </span></a></p>
+                </nav>
+                <nav class="Text-search-bar">
+                    <p>
+                    <a class="Link"style="text-decoration:none;"
+                    href=""><span class="White-back">Read</span></a>
+                    <a class="Link"style="text-decoration:none;"
+                    href=""><span class="Blue-back">View source</span>
+                    </a>
+                    <a class="Link"style="text-decoration:none;"
+                    href=""><span class="Blue-back">View history</span>
+                    </a>
+                    
+                    </p>
+                    <p style="margin-top: 2px;">
+                    <form id="Search-bar" class="example" style="max-width:320px">
+                        <input type="text" placeholder="Search Wikipedia" name="search2">
+                        <button type="submit"><i><img style="width: 12px;height: 15px;" src="free-icons-png-instagram-search-icon-white-11562954322qzcobg6iwo.png"></i></button>
+                    </form>
+                    </p>
+                </nav>
+            </header>
+
+            <section class="White-mid-back" id="Closer">
+
+                <div class="First-head">
+                <section>
+                    <p style="font-size: 22px;margin-left: 40px;
+                    margin-top: 15px;margin-bottom: 18px;">
+                        Welcome to Wikipedia,</p>
+                    <P class="High1">the free encyclopedia that anyone
+                         can edit.</p>
+                    <P class="High1">6,099,038 articles in English</P>
+                </section>
+                <section class="Ul-sec">
+                    <ul style="margin-right: 35px;">
+                        <li>
+                            Arts
+                        </li>
+                        <li>
+                            Biography
+                        </li>
+                        <li>
+                            Geography
+                        </li>
+                    </ul>
+                    <ul style="margin-right: 35px;">
+                        <li>
+                            History
+                        </li>
+                        <li>
+                            Mathematics
+                        </li>
+                        <li>
+                            Science
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            Society
+                        </li>
+                        <li>
+                            Technology
+                        </li>
+                        <li>
+                            <strong>Portals</strong>
+                        </li>
+                    </ul>
+                </section>
+                </div>
+
+                <section class="Section3">
+                    <div class="Left-section">
+                        <p class="Headline-lsec"><strong>
+                            <span class="Title">
+                                From today's featured article
+                            </span></strong>
+                        </p>
+    
+                        <p class="All-text">
+                            Milorad Petrović (18 April 1882 – 12 June 1981)
+                             was a lieutenant general in the Royal Yugoslav 
+                             Army who commanded the 1st Army Group during 
+                             World War II. He was commissioned into the Royal
+                             Serbian Army in 1901 and served in staff 
+                             positions during the Balkan Wars and the Serbian
+                             campaign of World War I. After the 27 March 1941 
+                             Yugoslav coup d'état, he was appointed to command 
+                             the 1st Army Group, responsible for the northern 
+                             borders of Yugoslavia with Italy, Germany and 
+                             Hungary. His formations were only partially 
+                             mobilised when the German-led invasion of 
+                             Yugoslavia began on 6 April. Significant fifth 
+                             column activities affected the Yugoslav units from
+                              the outset. On 10 April, two determined armoured 
+                              thrusts by the Germans caused the 1st Army Group 
+                              to disintegrate, and the following day Petrović 
+                              was captured by fifth columnists. He was soon 
+                              handed over to the Germans and spent the rest of 
+                              the war in a prisoner of war camp in Germany. 
+                              After the war, he chose to return to communist-led
+                               Yugoslavia, living in Belgrade, and remaining 
+                               active, swimming daily in the Sava well into his 
+                               nineties. (This article is part of a featured 
+                               topic: 1st Army Group (Kingdom of Yugoslavia).)
+                        </p>
+                        <p class="Down-text"style="text-align: right;"> 
+                            Recently featured: First Silesian War &#9642; Samuel J.
+                             Randall &#9642; All Souls (TV series)
+                        <p class="Down-text" style="text-align: right;">
+                            <strong>Archive</strong> &#9642; <strong>By email</strong> &#9642; <strong>More featured articles</strong></p> 
+                        </p>
+                        <p class="Headline-lsec"style="margin-bottom:1px"><strong>
+                            <span class="Title">
+                                Did you know ...
+                            </span></strong>
+                        </p>
+                        <div class="Text-image">
+                            <section style="margin-right: 5px;">
+                                <ul >
+                                    <li>
+                                        ... that one hundred years ago, 
+                                        Frank William North brought his 
+                                        congregation home from Russia 
+                                        on the SS Dongola (pictured)?
+                                    </li>
+                                    <li>
+                                        ... that the recording of the 
+                                        Bon Iver song "iMi" took five 
+                                        years and nearly 30 
+                                        collaborators to complete? 
+                                    </li>
+                                    <li>
+                                        ... that the University of 
+                                        Cologne awards an annual gender 
+                                        equality prize in honor of 
+                                        Jenny Gusyk, who became the 
+                                        school's first female and first 
+                                        foreign student when it was 
+                                        re-established in 1919? 
+                                    </li>
+                                    <li class="Double-width">
+                                        ... that fever hospitals, for infectious
+                                         patients, were once the most common 
+                                         type of hospital in England and Wales?
+                                    </li>
+                                    <li class="Double-width">
+                                        ... that a room in the Nebuta Museum in 
+                                        Aomori, Japan, is darkened so the floats
+                                         on display can be illuminated as they 
+                                         are during the city's annual summer 
+                                         festival?
+                                    </li>
+                                    <li class="Double-width">
+                                        ... that missionary and author Lucy 
+                                        Goodale Thurston survived a mastectomy 
+                                        without anaesthetic in 1855? 
+                                    </li>
+                                    <li class="Double-width">
+                                        ... that one Labour MP said that 
+                                        the result of the 2016 Sleaford and 
+                                        North Hykeham by-election could 
+                                        foreshadow an "electoral 
+                                        disaster" for the party?
+                                    </li>
+                                    <li class="Double-width">
+                                        ... that Biff Pocoroba endeared 
+                                        himself with Atlanta Braves fans 
+                                        despite the team's poor performance,
+                                         partly because they 
+                                        liked "the sound of his name"?
+                                    </li>
+                                </ul>
+                                <p style="text-align: end;width: 133%;">
+                                    <strong>Archive </strong>&#9642; 
+                                    <strong>Start a new article</strong>
+                                    &#9642;
+                                    <strong>Nominate an article</strong>
+                                </p>
+                                
+                            </section>
+                            
+                            <section>
+                                <p><img style="width: 170px;height: 100px;
+                                margin-right: 9px;"
+                                src="HMT_Dongola,_Hands_across_the_Sea.jpg"
+                                alt="HMT_Dongola,_Hands_across_the_Sea">
+                                <span style="font-size: 11px;">
+                                    SS Dongola</span></p>
+                            </section>
+
+                        </div>
+                    </div>
+    
+                    <div class="Right-section">
+                        <p class="Headline-rsec"><strong>
+                            <span class="Title">
+                                In the news
+                            </span></strong>
+                        </p>
+                        <div class="Second-head">
+                            <p>
+                                COVID-19 pandemic
+                            </p>
+                            <p style="font-size: 11px;">
+                                Disease &#9642; Virus &#9642; Testing
+                                &#9642; Timeline &#9642;
+                                 By location &#9642; 
+                                Impact &#9642; Notable deaths 
+                                &#9642; Portal
+                            </p>
+                        
+                    </div>
+                    <div class="Text-image">
+                        <section style="margin-right: 5px;">
+                            <ul >
+                                <li>
+                                    Burundian president Pierre 
+                                    Nkurunziza (pictured) dies 
+                                    in office at the age of 55.
+                                </li>
+                                <li>
+                                    Russian president Vladimir
+                                     Putin declares a state of
+                                      emergency after a diesel
+                                       spill near Norilsk.
+                                </li>
+                                <li>
+                                    SpaceX's Crew Dragon and 
+                                    Falcon 9 make their first 
+                                    crewed launch for NASA.
+                                </li>
+                                <li>
+                                    Protests and riots break 
+                                    out across the United States
+                                     and elsewhere following the
+                                      killing of George Floyd 
+                                      in Minneapolis.
+                                </li>
+                                
+                            </ul>
+                            <p style="margin-left: 9px;">
+                                <strong>Ongoing</strong>: Hong Kong protests
+                            </p>
+                            <p style="margin-left: 9px;width: 127%;">
+                                <strong>Recent deaths</strong>: 
+                                Emmanuel Issoze-Ngondet &#9642;
+                                Rosa Maria Sardà &#9642;
+                                Rosita Fornés &#9642;
+                                Claudell Washington &#9642;
+                                Pau Donés &#9642;
+                                Manuel Felguérez &#9642;
+                            </p>
+
+                            <p style="text-align: end;width: 127%;
+                            margin-bottom: 1px;">
+                                <strong>Nominate an article</strong>
+                            </p>
+                            
+                        </section>
+                        
+                        <section>
+                            <p><img style="width: 115px;height: 160px;
+                            margin-right: 9px;"
+                            src="Pierre_Nkurunziza_2014_press_conference_(cropped).jpg"
+                            alt="Pierre_Nkurunziza_2014_press_conference_(cropped).">
+                            <span style="font-size: 11px;">
+                                Pierre Nkurunziza</span></p>
+                        </section>
+                    </div>
+                    <p class="Headline-rsec"><strong>
+                        <span class="Title">
+                            On this day
+                        </span></strong>
+
+                    </p>
+                    <p style="margin-left: 9px;margin-bottom: 1px;">
+                        <strong>June 12</strong>:
+                        <strong> Dia dos Namorados </strong>
+                        in Brazil; 
+                        <strong>Independence Day</strong>
+                         in the Philippines (1898);
+                        <strong>Loving day</strong>
+                         in the United States (1967)
+                    </p>
+                    <div class="Text-image">
+                        <section style="margin-right: 5px;">
+                            <ul >
+                                <li>
+                                    1240 – The Disputation of Paris, 
+                                    in which four rabbis defended the 
+                                    Talmud against Nicholas Donin's 
+                                    accusations of blasphemy, 
+                                    began in the court of King Louis IX.
+                                </li>
+                                <li>
+                                    1954 – Dominic Savio (portrait shown),
+                                     who was 14 years old when he died, 
+                                     was canonised by Pope Pius XII, 
+                                     making him one of the youngest 
+                                     non-martyred 
+                                    saints in the Catholic Church.
+                                </li>
+                                <li>
+                                    1967 – The U.S. Supreme Court 
+                                    struck down laws restricting 
+                                    interracial marriage in the 
+                                    landmark civil 
+                                    rights case Loving v. Virginia.
+                                </li>
+                                <li style="margin-bottom: 1px;">
+                                    1994 – The Boeing 777, 
+                                    the world's largest twinjet, 
+                                    made its maiden flight.
+                                </li>
+                                
+                            </ul>
+                            <p class="Connection"style="margin-left: 9px;width: 127%;">
+                                Adriaen van Stalbemt (b. 1580)
+                                Egwale Seyon (d. 1818)Billy 
+                                Butlin (d. 1980)
+                            </p>
+                            <p class="Connection"style="margin-left:9px;">
+                                More anniversaries: June 11 &#9642;
+                                June 12 &#9642;
+                                June 13
+                            </p>
+                            <p style="margin-left: 9px;width: 125%;
+                            text-align: end;margin-right: 9px;margin-bottom: 5px;">
+                                <strong>Archive &#9642; By email &#9642;
+                                     List of historical
+                                     anniversaries</strong>
+
+                            </p>
+                            
+                        </section>
+                        
+                        <section>
+                            <p><img style="width: 115px;height: 160px;
+                            margin-right: 9px;"
+                            src="Z_domingo_savio.jpg"
+                            alt="Z_domingo_savio.">
+                            <span style="font-size: 11px;">
+                                Pierre Nkurunziza</span></p>
+                        </section>
+                    </div>
+                </div>
+                </section>
+                <section class="Section4">
+                    <div class="Down-section1">
+                        <p class="Headline-dsec1" style="margin-bottom: 1px;"><strong>
+                            <span class="Title">
+                                Today's featured article
+                            </span></strong>
+                        </p>
+
+                        <div class="Text-image">
+                            <section>
+                                <p><img style="width: 350px;height: 550px;
+                                margin-left: 9px;"
+                                src="Poesaka_Terpendam_ad,_Poestaka_Timoer_66_(15_Oct_1941),_p3.jpg"
+                                alt="Poesaka_Terpendam_ad,_Poestaka_Timoer_66_(15_Oct_1941),_p3">
+                                <span style="font-size: 11px;"></p>
+                            </section>
+                            <section>
+                                <p style="margin-left: 10px;margin-right: 10px;margin-top: 170px;">
+                                    	
+                                    Poesaka Terpendam (Buried Treasure)
+                                     is a film from the Dutch East Indies 
+                                     produced by Tan's Film and starring
+                                      Roekiah, Djoemala, and Kartolo. 
+                                      Roekiah was a favourite with 
+                                      Indonesian audiences and likened 
+                                      to Dorothy Lamour and Janet Gaynor
+                                      . It seems likely that the film 
+                                      has been lost; following a fire 
+                                      in 1952 in Produksi Film Negara's
+                                       storage facility, many old films
+                                        shot on nitrate 
+                                    were deliberately destroyed.
+                                </p>
+                                <p style="margin-left: 10px;margin-right: 10px;">
+                                    This advertisement for Poesaka 
+                                    Terpendam was published in the 
+                                    magazine Poestaka Timoer ahead of 
+                                    the film's debut on October 22, 
+                                    1941. The caption below the 
+                                    illustration, in Indonesian, 
+                                    translates to: "Frightening! 
+                                    Shocking! Great fights! Funny! 
+                                    Heart-pulling! The acting of 
+                                    Roekia, Indonesia's greatest 
+                                    fan-favourite movie star, will make
+                                     viewers awed and satisfied, 
+                                     and Kartolo's foolery will make all 
+                                    viewers laugh without end!"
+                                </p>
+                                <p style="margin-left: 10px;font-size: 11px;">
+                                    Advertisement credit: Tan's Film;
+                                     restored by Chris Woodrich
+                                </p>
+                                <p style="margin-left:9px;text-align: end;margin-right: 9px;">
+                                    Recently featured: Mariana &#9642;
+                                     Brown pelican &#9642;
+                                      James Francis Edward Stuart
+                                    
+                                </p>
+                                <p style="margin-left: 9px;
+                                text-align: end;margin-right: 9px;margin-bottom: 5px;">
+                                    <strong>Archive &#9642; 
+                                        More featured pictures</strong>
+    
+                                </p>
+                                
+                            </section>
+                        </div>
+                    </div>
+
+                </section>
+                <section class="Section5">
+                    <div class="Down-section2">
+                        <p class="Headline-dsec2" style="margin-bottom: 1px;"><strong>
+                            <span class="Title">
+                                Other areas of Wikipedia
+                            </span></strong>
+                        </p>
+                        <ul>
+                            <li>
+                                Community portal – Bulletin board,
+                                 projects, resources and activities
+                                  covering 
+                                a wide range of Wikipedia areas.
+                            </li>
+                            <li>
+                                Help desk – Ask questions about using 
+                                Wikipedia.
+                            </li>
+                            <li>
+                                Local embassy – For Wikipedia-related
+                                 communication in languages 
+                                 other than English.
+                            </li>
+                            <li>
+                                Reference desk – Serving as virtual
+                                 librarians, Wikipedia volunteers
+                                  tackle your questions 
+                                on a wide range of subjects.
+                            </li>
+                            <li>
+                                Site news – Announcements, updates, 
+                                articles and press releases on 
+                                Wikipedia and the Wikimedia 
+                                Foundation.
+                            </li>
+                            <li>
+                                Village pump – For discussions about
+                                 Wikipedia itself, including areas 
+                                 for technical issues and policies.
+                            </li>
+                        </ul>
+                        <p class="Headline-dsec2" style="margin-bottom: 1px;"><strong>
+                            <span class="Title">
+                                Wikipedia's sister projects
+                            </span></strong>
+                        </p>
+                        <p style="margin-left:9px;margin-bottom:1px;">
+                            Wikipedia is hosted by the Wikimedia Foundation, 
+                            a non-profit organization that also hosts 
+                            a range of other projects:
+                        </p>
+
+                        <div class="Sis-project">
+                        <ul class="No-bullets">
+                            <div class="Logo-text">
+                            <img class="Logo-img"style="width: 30px;height: 40px;"
+                            src="762px-Commons-logo.svg.png">
+                            <li><strong>Commons</strong><br>Free media repository</li>
+                            </div>
+
+                            <div class="Logo-text"style="margin-top:10px;margin-bottom:10px;">
+                            <img class="Logo-img"style="width: 30px;height: 40px;"
+                            src="1280px-Wikidata-logo-en.svg.png">
+                            <li><strong>Wikidata</strong><br>Free knowledge base</li>
+                            </div>
+
+                            <div class="Logo-text">
+                            <img class="Logo-img"style="width: 30px;height: 40px;"
+                            src="874px-Wikispecies-logo.svg.png">
+                            <li><strong>Wikispecies</strong><br>Directory of species</li>
+                            </div>
+
+
+                        </ul>
+                        <ul class="No-bullets">
+                            <div class="Logo-text">
+                            <img class="Logo-img"class="Logo-img"style="width: 30px;height: 40px;"
+                            src="MediaWiki_logo_1.png">
+                            <li><strong>MediaWiki</strong><br>Wiki software development</li>
+                            </div>
+    
+                            <div class="Logo-text"style="margin-top:10px;margin-bottom:10px">
+                            <img class="Logo-img"class="Logo-img"style="width: 30px;height: 40px;"
+                            src="1280px-WikiNews-Logo-en.svg.png">
+                            <li><strong>Wikinews</strong><br>Free-content news</li>
+                            </div>
+
+                            <div class="Logo-text">
+                            <img class="Logo-img"class="Logo-img"style="width: 30px;height: 40px;"
+                            src="1200px-Wikiversity-logo.svg.png">
+                            <li><strong>Wikiversity</strong><br>Free learning Tools</li>
+                            </div>
+    
+                            
+                        </ul>
+                        <ul class="No-bullets">
+                            <div class="Logo-text">
+                            <img class="Logo-img"style="width: 30px;height: 40px;"
+                            src="1200px-Meta-Wiki_Proposed_logo.svg.png">
+                            <li><strong>Meta-wiki</strong><br>Wikimedia project coordination</li>
+                            </div>
+        
+                            <div class="Logo-text"style="margin-top:10px;margin-bottom:10px">
+                            <img class="Logo-img"style="width: 30px;height: 40px;"
+                            src="865px-Wikiquote-logo.svg.png">
+                            <li><strong>Wikiquote</strong><br>Collection of quotations</li>
+                            </div>
+
+                            <div class="Logo-text">
+                            <img class="Logo-img"style="width: 30px;height: 40px;"
+                            src="1024px-Wikivoyage-Logo-v3-icon.svg.png">
+                            <li><strong>Wikivoyage</strong><br>Free travel guide</li>
+                            </div>
+         
+                        </ul>
+                        <ul class="No-bullets">
+                            <div class="Logo-text">
+                            <img class="Logo-img"style="width: 30px;height: 40px;"
+                            src="1200px-Wikibooks-logo-en.svg.png">
+                            <li><strong>Wikibooks</strong><br>Free textbooks and manuals</li>
+                            </div>
+            
+                            <div class="Logo-text"style="margin-top:10px;margin-bottom:10px">
+                            <img class="Logo-img"style="width: 30px;height: 40px;"
+                            src="Wikisource-logo-v3.png">
+                            <li><strong>Wikisource</strong><br>Free-content library</li>
+                            </div>
+
+                            <div class="Logo-text">
+                            <img class="Logo-img"style="width: 30px;height: 40px;"
+                            src="1200px-Wiktionary-logo-v2.svg.png">
+                            <li><strong>Wikitionary</strong><br>Free-content library</li>
+                            </div>
+            
+                            
+                        </ul>
+                        </div>
+
+                        <p class="Headline-dsec2" style="margin-bottom: 1px;"><strong>
+                            <span class="Title">
+                                Wikipedia languages
+                            </span></strong>
+
+                        </p>
+
+                        <p style="margin-left: 9px;">
+                            This Wikipedia is written in English.
+                             Started in 2001, it currently contains
+                              6,099,754 articles. Many other 
+                              Wikipedias are available; some 
+                            of the largest are listed below.
+                        </p>
+                        <ul>
+                            <li>
+                                More than 1,000,000 articles: العربية &#9642; 
+                                Deutsch &#9642; 
+                                Español &#9642; 
+                                Français &#9642; 
+                                Italiano &#9642; 
+                                Nederlands &#9642; 
+                                日本語 &#9642; 
+                                Polski &#9642; 
+                                Português &#9642; 
+                                Русский &#9642; 
+                                SvenskaУкраїнська &#9642; 
+                                Tiếng Việt &#9642; 
+                                中文
+                            </li>
+                            <li>
+                                More than 250,000 articles: Bahasa Indonesia &#9642; 
+                                Bahasa Melayu &#9642; 
+                                Bân-lâm-gú &#9642; 
+                                Български &#9642; 
+                                Català &#9642; 
+                                Čeština &#9642; 
+                                Dansk &#9642; 
+                                Esperanto &#9642; 
+                                Euskara &#9642; 
+                                فارسی &#9642; 
+                                ‎עברית &#9642; 
+                                한국어 &#9642; 
+                                Magyar &#9642; 
+                                Norsk Bokmål &#9642; 
+                                Română &#9642; 
+                                Srpski &#9642; 
+                                Srpskohrvatski &#9642; 
+                                Suomi &#9642; 
+                                Türkçe &#9642; 
+                            </li>
+                            <li>
+                               
+                                More than 50,000 articles: Asturianu &#9642; 
+                                Bosanski &#9642; 
+                                Eesti &#9642; 
+                                Ελληνικά &#9642; 
+                                English (Simple English) &#9642; 
+                                Galego &#9642; 
+                                Hrvatski &#9642; 
+                                Latviešu &#9642; 
+                                Lietuvių &#9642; 
+                                മലയാളം &#9642; 
+                                Norsk nynorsk &#9642; 
+                                Slovenčina &#9642; 
+                                Slovenščina &#9642; 
+                                ไทย 
+                            </li>
+                        </ul>
+
+                        <p style="text-align: center;"><strong>Complete list of Wikipedias</strong></p>
+                          
+                    </div>
+
+                </section>
+
+            </section>
+            
+        
+            <p style="margin-right: 20px;margin-left: 20px;
+            margin-top: 28px;">Text is available under the 
+                Creative Commons Attribution-
+                ShareAlike License; additional
+                 terms may apply. By using 
+                 this site, you agree to the 
+                 Terms of Use and Privacy 
+                 Policy. Wikipedia® is a registered
+                  trademark of the Wikimedia 
+                  Foundation, Inc., 
+                a non-profit organization.
+            </p>
+
+            <div class="Text-sponser">
+                <section> 
+                Privacy policy
+                About Wikipedia
+                Disclaimers
+                Contact Wikipedia
+                Developers
+                Statistics
+                Cookie statement
+                Mobile view
+                </section>
+                <section class="Sponser-list">
+                    <nav>
+                        <img style="width: 100px;height: 35px;" src="1280px-A_Wikimedia_project.svg.png">
+                    </nav>
+                    <nav>
+                        <img style="width: 100px;height: 35px;margin-left: 5px;" src="download.jpg">
+                    </nav>
+                </section>
+            </div>
+        
+        </section>
+        </div>
+        
+
+    </body>
+
+</html>

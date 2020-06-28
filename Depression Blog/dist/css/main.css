@@ -1,0 +1,261 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff;
+  color: #6b6b6b;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1;
+}
+
+.Main-section {
+  width: 60%;
+  height: cover;
+  padding-top: 7vh;
+  margin: 0 auto;
+}
+
+.Top {
+  width: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0 auto;
+  height: 46vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Img {
+  width: 40%;
+  margin: 5px 5px;
+}
+
+.Img .Img__logo {
+  width: 100%;
+  height: 44vh;
+}
+
+.Heading {
+  margin: 5px 5px;
+  width: 100%;
+  height: 44vh;
+  border-top: 45px solid #3799da;
+  border-bottom: 45px solid #3799da;
+}
+
+.Heading h1 {
+  font-weight: 900;
+  font-size: 70px;
+  width: 100%;
+}
+
+.Heading h4 {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.Bottom {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0 auto;
+  height: cover;
+}
+
+.Left {
+  background-color: rgba(156, 156, 156, 0.356);
+  margin: 5px 5px;
+  width: 40%;
+  height: cover;
+}
+
+.Left p {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.Left span {
+  font-weight: bold;
+  color: black;
+}
+
+.Left h4 {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #fff;
+  margin: 5px 5px;
+  color: black;
+}
+
+.Left h5 {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #fff;
+  margin: 5px 5px;
+  color: black;
+}
+
+.Bar {
+  border-bottom: 1px solid #fff;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+
+.Right {
+  margin: 5px 5px;
+  width: 100%;
+  height: 70vh;
+}
+
+.Divide {
+  margin-top: -10px;
+  padding-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+.Fst-part {
+  margin: 5px 5px;
+  width: 50%;
+  border-right: 1px solid #6b6b6b;
+}
+
+.Big-letter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.First-letter {
+  margin-top: -10px;
+  font-size: 65px;
+  color: black;
+}
+
+.Snd-part {
+  width: 50%;
+  margin: 5px 5px;
+}
+
+.Snd-part p {
+  border-bottom: 20px solid #3799da;
+  padding-bottom: 10px;
+}
+
+.Box-logo {
+  font-size: 20px;
+}
+
+.Last-center {
+  text-align: center;
+}
+
+.Quotation {
+  font-size: 60px;
+}
+
+.Name {
+  font-weight: 800;
+  font-size: 14px;
+  color: black;
+}
+
+.Last-paragraph {
+  border-top: 3px solid black;
+}
+
+.Last-paragraph span {
+  color: black;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1100px) {
+  .Main-section {
+    width: 75%;
+  }
+  .Top {
+    height: 92vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .Main-section {
+    width: 95%;
+  }
+  .Top {
+    height: 80vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .Top h1 {
+    font-size: 50px;
+  }
+  .Img {
+    height: 40vh;
+  }
+  .Img .Img__logo {
+    height: 40vh;
+  }
+  .Bottom {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .Left {
+    width: 95%;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .Right {
+    width: 95%;
+  }
+  .Divide {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .Fst-part {
+    width: 100%;
+    border: none;
+  }
+  .Snd-part {
+    margin-top: -5px;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=main.css.map */

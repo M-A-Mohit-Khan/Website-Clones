@@ -1,0 +1,236 @@
+@import 'config';
+
+
+
+body{
+  background-color: $background-color;
+  color:$secondary__text-color;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1;
+
+}
+  .Main-section{
+    width: 60%;
+    height: cover;
+    padding-top: 7vh;
+    margin: 0 auto;
+  }
+
+
+    .Top{
+    width: cover;
+    @include flexcenter(row);
+    margin: 0 auto;
+    height: 46vh;
+    align-items: center;
+    
+    }
+      .Img{
+        width:40%;
+        @include space;
+      
+        #{&}__logo{
+          width: 100%;
+          height: 44vh;
+        }
+      }
+
+      .Heading{
+        @include space;
+        width: 100%;
+        height: 44vh;
+        border-top: 45px solid rgb(55, 153, 218);
+        border-bottom: 45px solid rgb(55, 153, 218);
+        
+        h1{
+          font-weight: 900;
+          font-size: 70px;
+          width: 100%;
+          
+        }
+        h4{
+          font-size: 15px;
+          margin-bottom: 10px;
+        }
+        
+      
+      }
+
+    
+    .Bottom{
+      width: 100%;
+      @include flexcenter(row);
+      margin: 0 auto;
+      height: cover;
+    }
+      .Left{
+          background-color: $secondary__background-color;
+          @include space;
+          width: 40%;
+          height: cover;
+          p{
+            margin-right: 5px;
+            margin-left: 5px;
+          }
+          span{
+            font-weight: bold;
+            color: $text-color;
+          }
+          h4{
+            padding-bottom: 5px;
+            border-bottom: 1px solid #fff;
+            margin: 5px 5px;
+            color:$text-color;
+
+            
+          }
+          h5{
+            padding-bottom: 5px;
+            border-bottom: 1px solid #fff;
+            margin:5px 5px;
+            color:$text-color;
+            
+          }
+
+      }
+        .Bar{
+          border-bottom: 1px solid #fff;
+          padding-top:5px;
+          padding-bottom: 5px;
+          margin-bottom: 5px;
+        }
+
+      .Right{
+        @include space;
+        width: 100%;
+        height: 70vh;
+      }
+        .Divide{
+          margin-top: -10px;
+          padding-bottom: 10px;
+          @include flexcenter(row);
+          width: 100%;
+
+        } 
+          .Fst-part{
+            @include space;
+            width: 50%;
+            border-right: 1px solid $secondary__text-color;
+          }
+            .Big-letter{
+              
+            
+              @include flexcenter(row);
+
+              
+            }
+              .First-letter{
+                margin-top: -10px;
+                font-size:65px;
+                color: black;
+                
+              } 
+
+            
+          
+          .Snd-part{
+            width: 50%;
+            @include space;
+            p{
+              border-bottom: 20px solid rgb(55, 153, 218);
+              padding-bottom: 10px;
+              
+            }
+          }
+            .Box-logo{
+              font-size: 20px;
+            }
+
+              .Last-center{
+                text-align: center;
+              
+              }
+                .Quotation{
+                  font-size: 60px;
+                }
+                .Name{
+                  font-weight: 800;
+                  font-size: 14px;
+                  color: black;
+                  
+                }
+              
+        
+      .Last-paragraph{
+        border-top: 3px solid black;
+        span{
+          color: black;
+          font-weight: 700;
+        }
+      }
+
+@media screen and (max-width: 1100px) {
+  .Main-section{
+    width: 75%;
+  }
+  .Top{
+    
+    height: 92vh;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 650px) {
+  .Main-section{
+    width: 95%;
+  }
+  .Top{
+    
+    height: 80vh;
+    flex-direction: column;
+    h1{
+      
+      font-size: 50px;
+    }
+  }
+  .Img{
+    height: 40vh;
+  
+    #{&}__logo{
+      height: 40vh;
+    }
+  }
+  
+  .Bottom{
+    align-items: center;
+    flex-direction: column;
+  }
+  .Left{
+    width: 95%;
+    padding-left: 5px;
+    padding-right: 5px;
+    
+  }
+  .Right{
+    width: 95%;
+    
+  }
+  .Divide{
+    flex-direction: column;
+    
+  }
+  .Fst-part{
+    width: 100%;
+    border: none;
+  }
+  .Snd-part{
+    margin-top: -5px;
+    width: 100%;
+  }
+}
+
+
+      
+
+
+
+

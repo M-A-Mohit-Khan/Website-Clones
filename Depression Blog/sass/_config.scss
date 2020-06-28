@@ -1,0 +1,21 @@
+$background-color:#fff;
+$secondary__background-color: rgba(156, 156, 156, 0.356);
+$bar-color:rgb(0, 140, 255);
+$text-color:black;
+$secondary__text-color:rgb(107, 107, 107);
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin flexcenter($direction) {
+  display: flex;
+  flex-direction: $direction ;
+}
+
+@mixin space{
+  margin: 5px 5px;
+}
+
